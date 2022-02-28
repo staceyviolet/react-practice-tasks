@@ -1,6 +1,6 @@
 import * as React from 'react'
 import PropTypes from "prop-types";
-import {ItemModel} from "../models/ItemModel";
+import {ItemModel} from "../../models/ItemModel";
 import ItemPurchaseInfo from "./ItemPurchaseInfo";
 import ItemDescription from "./ItemDescription";
 import ItemHighlight from "./ItemHighlight";
