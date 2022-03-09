@@ -1,6 +1,7 @@
 import ShopItemFunc from "./components/ ShopItemFunc/ShopItemFunc";
 import ShopItemClass from "./components/ ShopItemClass/ShopItemClass";
 import './App.css';
+import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
     const item = {
@@ -14,8 +15,9 @@ function App() {
 
     return (
         <div>
-            <ShopItemFunc item={item}/>
-            <ShopItemClass item={item}/>
+            {/*<ShopItemFunc item={item}/>*/}
+            {/*<ShopItemClass item={item}/>*/}
+            <Portfolio />
         </div>
     );
 }
