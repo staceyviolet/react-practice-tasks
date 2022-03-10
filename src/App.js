@@ -20,7 +20,7 @@ function App() {
             {/*<ShopItemFunc item={item}/>*/}
             {/*<ShopItemClass item={item}/>*/}
             <Portfolio />
-            <Store products={products} />
+            {/*<Store products={products} />*/}
         </div>
     );
 }

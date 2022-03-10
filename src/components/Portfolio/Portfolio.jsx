@@ -25,7 +25,7 @@ export default class Portfolio extends React.Component {
                     filters={this.state.filters}
                     selected={this.state.selected}
                     onSelectFilter={this.state.onSelectFilter}/>
-                <ProjectList projects={this.filterProjects(projects, this.state.selected)}/>
+                <ProjectList projects={this.filterProjects(projects, this.state.selected)} selected={this.state.selected}/>
             </div>
         )
     }
