@@ -2,6 +2,8 @@ import ShopItemFunc from "./components/ ShopItemFunc/ShopItemFunc";
 import ShopItemClass from "./components/ ShopItemClass/ShopItemClass";
 import './App.css';
 import Portfolio from "./components/Portfolio/Portfolio";
+import Store from "./components/Store/Store";
+import {products} from "./components/Store/products";
 
 function App() {
     const item = {
@@ -17,7 +19,8 @@ function App() {
         <div>
             {/*<ShopItemFunc item={item}/>*/}
             {/*<ShopItemClass item={item}/>*/}
-            <Portfolio />
+            {/*<Portfolio />*/}
+            <Store products={products} />
         </div>
     );
 }

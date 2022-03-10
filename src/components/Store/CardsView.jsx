@@ -1,18 +1,17 @@
 import * as React from 'react'
-import {useState} from "react";
-import IconSwitch from "./IconSwitch";
-import ListView from "./ListView";
+import ShopCard from "./ShopCard";
 
 export default function CardsView(props) {
-
     const {cards} = props
 
-    return (
-        cards.map((card, index) => {
-            return (<div key={index}>
-                <CardsView/>
-            </div>)
-
-        })
+    return (<div style={{display: "flex", flexWrap: "wrap", justifyContent:"space-between"}}>
+            {cards.map((card, index) => {
+                return (
+                    <div key={index}>
+                        <ShopCard card={card}/>
+                    </div>
+                )
+            })}
+        </div>
     )
 }

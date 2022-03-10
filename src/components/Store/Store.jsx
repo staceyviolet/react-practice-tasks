@@ -3,18 +3,17 @@ import {useState} from "react";
 import IconSwitch from "./IconSwitch";
 import ListView from "./ListView";
 import CardsView from "./CardsView";
-import {products} from "./products";
 
 export default function Store(props) {
-
-    const [view, setView] = useState()
+    const {products} = props
+    const [isListView, setIsListView] = useState(false)
 
     return (
         <div>
-            <IconSwitch icon={view === "list" ? "view_list": "view_module"} onSwitch={setView}/>
-            {view === "cards"
-                ? <CardsView cards={products}/>
-                : <ListView items={products}/>}
+            <IconSwitch icon={isListView ? "view_list" : "view_module"}
+                        onSwitch={() => setIsListView(!isListView)}/>
+            {!isListView ? <CardsView cards={products}/>
+                         : <ListView items={products}/>}
         </div>
     )
 }

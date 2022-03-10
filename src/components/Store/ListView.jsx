@@ -5,13 +5,12 @@ export default function ListView(props) {
     const {items} = props
 
     return (
-        (
-            items.map((item, index) => {
-                return (<div key={index}>
-                    <ShopItem/>
-                </div>)
-
-            })
-        )
+        items.map((item, index) => {
+            return (
+                <div key={index}>
+                    <ShopItem item={item}/>
+                </div>
+            )
+        })
     )
 }
