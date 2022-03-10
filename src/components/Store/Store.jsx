@@ -9,11 +9,15 @@ export default function Store(props) {
     const [isListView, setIsListView] = useState(false)
 
     return (
-        <div>
-            <IconSwitch icon={isListView ? "view_list" : "view_module"}
+        <div style={{
+            display: "flex",
+            flexDirection: 'column',
+            padding: '30px 50px'
+        }}>
+            <IconSwitch icon={isListView ? "view_module" : "view_list"}
                         onSwitch={() => setIsListView(!isListView)}/>
             {!isListView ? <CardsView cards={products}/>
-                         : <ListView items={products}/>}
+                : <ListView items={products}/>}
         </div>
     )
 }

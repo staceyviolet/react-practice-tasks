@@ -1,0 +1,12 @@
+.icon-switch{
+    width: fit-content;
+    align-self: end;
+    padding-bottom: 30px;
+    cursor: pointer;
+    color: #555;
+    font-size: 35px !important;
+}
+
+.icon-switch:hover{
+    color: #666;
+}
