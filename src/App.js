@@ -4,6 +4,7 @@ import './App.css';
 import Portfolio from "./components/Portfolio/Portfolio";
 import Store from "./components/Store/Store";
 import {products} from "./components/Store/products";
+import Stars from "./components/Stars/Stars";
 
 function App() {
     const item = {
@@ -19,8 +20,9 @@ function App() {
         <div>
             {/*<ShopItemFunc item={item}/>*/}
             {/*<ShopItemClass item={item}/>*/}
-            <Portfolio />
+            {/*<Portfolio />*/}
             {/*<Store products={products} />*/}
+            <Stars count={2}/>
         </div>
     );
 }
