@@ -24,4 +24,8 @@ Stars.propTypes = {
     count: PropTypes.number
 }
 
+Stars.defaultProps = {
+    count: 0
+}
+
 export default Stars

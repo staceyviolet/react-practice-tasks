@@ -5,6 +5,9 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Store from "./components/Store/Store";
 import {products} from "./components/Store/products";
 import Stars from "./components/Stars/Stars";
+import Listing from "./components/Listing/Listing";
+import {data} from "./components/Listing/data";
+import shortid from "shortid";
 
 function App() {
     const item = {
@@ -22,7 +25,8 @@ function App() {
             {/*<ShopItemClass item={item}/>*/}
             {/*<Portfolio />*/}
             {/*<Store products={products} />*/}
-            <Stars count={2}/>
+            {/*<Stars count={1}/>*/}
+            <Listing items={data}/>
         </div>
     );
 }
