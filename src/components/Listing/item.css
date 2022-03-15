@@ -1,0 +1,65 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 250px;
+    height: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0px 3px 13px -7px #000000;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.item-image img {
+    width: 100%;
+
+}
+
+.item-details {
+
+}
+
+.item-title {
+    color: #333333;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: initial;
+    margin: 0;
+}
+
+.item-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3a773a;
+    margin: 10px 0;
+    float: left;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+}
+
+.item-quantity {
+    line-height: 18px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    padding: 5px 10px;
+    width: max-content;
+}
+
+.level-medium {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.red {
+    background: #ab433f;
+}
+
+.green {
+    background: #3a773a;
+}
