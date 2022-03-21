@@ -1,0 +1,62 @@
+.workouts-tracker {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.workouts-tracker form {
+    display: flex;
+    justify-content: space-between;
+    width: 530px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+.workouts-tracker form input, .workouts-tracker form button {
+    line-height: 40px;
+    border-radius: 10px;
+    background: white;
+    border: 2px solid black;
+    align-self: flex-end;
+}
+
+.workouts-tracker form input {
+    margin-top: 10px;
+}
+
+.workouts-tracker form button {
+    cursor: pointer;
+    height: 45px;
+    width: 70px;
+}
+
+.workouts-list-header {
+    margin-bottom: 20px;
+}
+
+.workouts-list-header, .workout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 530px;
+    justify-items: center;
+}
+
+.workouts-list {
+    border: 2px solid black;
+    border-radius: 10px;
+    min-height: 45px;
+    width: 530px;
+}
+
+.workout {
+    min-height: 50px;
+    align-items: center;
+}
+
+.delete-workout, .edit-workout {
+    cursor: pointer;
+}
