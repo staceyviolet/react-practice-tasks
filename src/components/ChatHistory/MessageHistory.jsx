@@ -25,11 +25,14 @@ export default function MessageHistory({list}) {
                                                              from={message.from}
                                                              message={message}
                                             />
+
                                         case "typing":
                                             return <Typing key={message.id}
                                                            from={message.from}
                                                            message={message}
                                             />
+                                        default:
+                                            return null
                                     }
                                 })}
                             </ul>

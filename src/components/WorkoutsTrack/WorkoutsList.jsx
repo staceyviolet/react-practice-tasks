@@ -1,10 +1,8 @@
 import * as React from 'react'
-import {generate} from "shortid";
 import Workout from "./Workout";
 
 
-export default function WorkoutsList({workouts}) {
-
+export default function WorkoutsList({workouts, onDelete, onEdit}) {
     return (
         <>
             <div className={"workouts-list-header"}>
@@ -13,7 +11,10 @@ export default function WorkoutsList({workouts}) {
                 <div>Действия</div>
             </div>
             <div className={"workouts-list"}>
-                {workouts.map(workout => <Workout key={generate()} workout={workout}/>)}
+                {workouts.map(workout => <Workout key={workout.id}
+                                                  workout={workout}
+                                                  onDelete={onDelete}
+                                                  onEdit={onEdit}/>)}
             </div>
         </>
 
