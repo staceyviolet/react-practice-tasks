@@ -9,6 +9,7 @@ import {shopItem} from "./components/ShopItem/shopItem";
 import {products} from "./components/Store/products";
 import {data} from "./components/Listing/data";
 import {messages} from "./components/ChatHistory/messages";
+import ColorConverter from "./components/ColorConverter/ColorConverter";
 
 function App() {
     return (
@@ -18,12 +19,12 @@ function App() {
             {/*<ShopItemClass item={shopItem}/>*/}
             {/*<Portfolio/>*/}
             {/*<Store products={products}/>*/}
-
-
-            {/* HOMEWORK 3 */}
-            <Stars count={1}/>
+            {/*<Stars count={1}/>*/}
             {/*<Listing items={data}/>*/}
             {/*<MessageHistory list={messages}/>*/}
+
+            {/* HOMEWORK 4 */}
+            <ColorConverter/>
         </div>
     );
 }

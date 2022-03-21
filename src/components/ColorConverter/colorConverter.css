@@ -1,0 +1,38 @@
+.color-converter {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.color-converter form input {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 45px;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 3px;
+    text-align: center;
+}
+.color-converter form input:focus {
+    outline: none;
+    border: 2px solid dodgerblue;
+}
+
+
+.rgb {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    line-height: 45px;
+}
+
+.black-opacity {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.white-opacity {
+    background: rgba(255, 255, 255, 0.3);
+}
