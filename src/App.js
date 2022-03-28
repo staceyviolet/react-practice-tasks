@@ -11,24 +11,26 @@ import {data} from "./components/Listing/data";
 import {messages} from "./components/ChatHistory/messages";
 import ColorConverter from "./components/ColorConverter/ColorConverter";
 import WorkoutsTracker from "./components/WorkoutsTrack/WorkoutsTracker";
+import Cards from "./components/Cards/Cards";
+import {Decomposition} from "./components/Decomposition/Decomposition";
 
 function App() {
     return (
         <div>
-            {/*PREV HOMEWORKS */}
+            /** PREV HOMEWORKS. */
             {/*<ShopItemFunc item={shopItem}/>*/}
             {/*<ShopItemClass item={shopItem}/>*/}
             {/*<Portfolio/>*/}
             {/*<Store products={products}/>*/}
-
-            {/* HOMEWORK 3 */}
             {/*<Stars count={1}/>*/}
             {/*<Listing items={data}/>*/}
             {/*<MessageHistory list={messages}/>*/}
-
-            {/* HOMEWORK 4 */}
-            <ColorConverter/>
+            {/*<ColorConverter/>*/}
             {/*<WorkoutsTracker />*/}
+
+            /** HOMEWORK 5. */
+            <Cards/>
+            <Decomposition/>
         </div>
     );
 }
