@@ -1,6 +1,11 @@
 import * as React from 'react'
 import {Card} from "./Card";
 
+/**
+ * Represents site ad.
+ * @param {boolean} isYandexAd - true if advertisement belongs to Yandex.
+ * @param {Object} ad - advertisement.
+ */
 export const Ad = ({isYandexAd, ad}) => {
     if (isYandexAd) {
         return (

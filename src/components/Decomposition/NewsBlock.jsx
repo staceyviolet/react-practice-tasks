@@ -1,11 +1,15 @@
 import * as React from 'react'
 
+/**
+ * Represents news list.
+ * @param {Array<Object>} news - list of news.
+ */
 export const NewsBlock = ({news}) => {
     return (
-        <div>
+        <ul>
             {news.map(item => {
-                return <p><i>{item.icon}</i><span>{item.text}</span></p>
+                return <li><i>{item.icon}</i><a href={item.link}>{item.text}</a></li>
             })}
-        </div>
+        </ul>
     )
 }

@@ -15,6 +15,8 @@ import {Ad} from "./Ad";
 import {Map} from "./Map";
 
 const searchExample = "фаза луны сегодня"
+const weatherProps = {}
+const menuItems = []
 
 export const Decomposition = ({}) => {
     return (
