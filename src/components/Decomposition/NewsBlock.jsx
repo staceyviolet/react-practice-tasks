@@ -1,4 +1,5 @@
 import * as React from 'react'
+import generate from "shortid";
 
 /**
  * Represents news list.
@@ -8,7 +9,7 @@ export const NewsBlock = ({news}) => {
     return (
         <ul>
             {news.map(item => {
-                return <li><i>{item.icon}</i><a href={item.link}>{item.text}</a></li>
+                return <li key={generate()}><i>{item.icon}</i><a href={item.link}>{item.text}</a></li>
             })}
         </ul>
     )

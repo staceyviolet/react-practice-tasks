@@ -10,15 +10,14 @@ export const Ad = ({isYandexAd, ad}) => {
     if (isYandexAd) {
         return (
             <div>
-                <img src={ad.src} alt={ad.alt}/>
+                <img src={ad.src} alt={ad.title}/>
                 <Card title={ad.title}>
                     <p> {ad.description}</p>
                 </Card>
             </div>
         )
     } else {
-        return <img src={ad.src} alt={ad.alt}/>
+        return <img src={ad.src} alt={ad.title}/>
     }
-
 
 }

@@ -1,5 +1,10 @@
 import * as React from 'react'
 
+/**
+ * Represents page wrapper and shows logo if exists.
+ * @param children - page components
+ * @param {string} logo - path to the logo.
+ */
 export const HomePage = ({children, logo}) => {
     return (
         <>

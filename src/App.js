@@ -17,7 +17,7 @@ import {Decomposition} from "./components/Decomposition/Decomposition";
 function App() {
     return (
         <div>
-            /** PREV HOMEWORKS. */
+            {/*PREV HOMEWORKS.*/}
             {/*<ShopItemFunc item={shopItem}/>*/}
             {/*<ShopItemClass item={shopItem}/>*/}
             {/*<Portfolio/>*/}
@@ -28,9 +28,9 @@ function App() {
             {/*<ColorConverter/>*/}
             {/*<WorkoutsTracker />*/}
 
-            /** HOMEWORK 5. */
+            {/*HOMEWORK 5.*/}
             <Cards/>
-            <Decomposition/>
+            {/*<Decomposition/>*/}
         </div>
     );
 }

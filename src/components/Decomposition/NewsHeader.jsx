@@ -2,15 +2,15 @@ import * as React from 'react'
 
 /**
  * News area selector. Allows to switch between news collections
- * @param {Object} newsHeader - object.
+ * @param {Object} tabs - object containing tabs.
  */
-export const NewsHeader = ({newsHeader}) => {
+export const NewsHeader = ({tabs}) => {
     return (
         <div>
-            <h5>{newsHeader.now}</h5>
-            <h5>{newsHeader.country}</h5>
-            <h5>{newsHeader.recommended}</h5>
-            <span>{newsHeader.time}</span>
+            <h5>{tabs.now}</h5>
+            {/*<h5>{tabs.country}</h5>*/}
+            {/*<h5>{tabs.recommended}</h5>*/}
+            {/*<span>{tabs.time}</span>*/}
         </div>
     )
 }
