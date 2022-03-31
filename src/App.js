@@ -27,10 +27,11 @@ function App() {
             {/*<MessageHistory list={messages}/>*/}
             {/*<ColorConverter/>*/}
             {/*<WorkoutsTracker />*/}
-
-            {/*HOMEWORK 5.*/}
-            <Cards/>
+            {/*<Cards/>*/}
             {/*<Decomposition/>*/}
+
+            {/*HOMEWORK 6*/}
+
         </div>
     );
 }
