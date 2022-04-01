@@ -21,33 +21,25 @@
 
 .clock__hand {
     position: absolute;
-    background: black;
-    border-radius: 10px;
-    transform-origin: bottom;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform-origin: bottom left;
 }
 
 .hour {
-    width: 1.8%;
-    height: 25%;
-    top: 25%;
-    left: 48.85%;
-    opacity: 0.8;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    border-left:solid 2px #000;
 }
 
 .minute {
-    width: 1.6%;
-    height: 30%;
-    top: 19%;
-    left: 48.9%;
-    opacity: 0.8;
+    border-left:solid 2px #000;
 }
 
 .second {
-    width: 1%;
-    height: 40%;
-    top: 9%;
-    left: 49.25%;
-    opacity: 0.8;
+    border-left:solid 1px #525252;
 }
 
 .clock__delete {
