@@ -13,6 +13,8 @@ import ColorConverter from "./components/ColorConverter/ColorConverter";
 import WorkoutsTracker from "./components/WorkoutsTrack/WorkoutsTracker";
 import Cards from "./components/Cards/Cards";
 import {Decomposition} from "./components/Decomposition/Decomposition";
+import {WorldClock} from "./components/WorldClock/WorldClock";
+
 
 function App() {
     return (
@@ -31,7 +33,7 @@ function App() {
             {/*<Decomposition/>*/}
 
             {/*HOMEWORK 6*/}
-
+            <WorldClock/>
         </div>
     );
 }

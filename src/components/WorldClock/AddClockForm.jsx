@@ -1,23 +1,17 @@
 import * as React from 'react'
 import FormInput from "../WorkoutsTrack/FormInput";
-import {useState} from "react";
+import './addClockForm.css'
 
-export const AddClockForm = ({}) => {
-    const [name, setName] = useState('')
-    const [timeZone, setTimeZone] = useState('')
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-    }
-
+export const AddClockForm = ({name, timezone, handleChange, handleSubmit}) => {
     return (
-        <>
+        <div className={'add-clock-form'}>
             <form onSubmit={handleSubmit}>
                 <FormInput fieldName={"name"} fieldValue={name} labelText={"Название"}
-                           onChange={(e) => setName(e.target.value)}/>
-                <FormInput fieldName={"timeZone"} fieldValue={timeZone} labelText={"Временная Зона"}
-                           onChange={(e) => setTimeZone(e.target.value)}/>
+                           onChange={handleChange}/>
+                <FormInput fieldName={"timezone"} fieldValue={timezone} labelText={"Временная Зона"}
+                           onChange={handleChange}/>
+                <button type={"submit"}>Добавить</button>
             </form>
-        </>
+        </div>
     )
 }

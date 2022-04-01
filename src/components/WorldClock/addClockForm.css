@@ -1,0 +1,24 @@
+.add-clock-form form {
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.add-clock-form form input, .add-clock-form form button {
+    line-height: 30px;
+    background: white;
+    border: 1px solid black;
+    align-self: flex-end;
+}
+
+.add-clock-form form input {
+    margin-top: 5px;
+}
+
+.add-clock-form form button {
+    cursor: pointer;
+    height: 35px;
+    width: 150px;
+}
