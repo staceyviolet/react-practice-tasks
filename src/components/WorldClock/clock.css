@@ -1,7 +1,8 @@
 .clock {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    height: max-content;
+    margin-bottom: 20px;
 }
 
 .clock__name {

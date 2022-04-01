@@ -31,6 +31,8 @@ export const WorldClock = ({}) => {
                 timezone: timezone
             }]
         })
+        setName("")
+        setTimezone("")
     }
 
     const handleRemoveClick = (id) => {
@@ -39,7 +41,7 @@ export const WorldClock = ({}) => {
 
     return (
         <div className={"world-clock"}>
-            <AddClockForm handleSubmit={handleSubmit} handleChange={handleChange}/>
+            <AddClockForm handleSubmit={handleSubmit} handleChange={handleChange} name={name} timezone={timezone}/>
             <div className={"world-clock__clocks"}>
                 {clocksArray.map(clock => {
                     return <Clock key={clock.id} clock={clock} removeClock={handleRemoveClick}/>
