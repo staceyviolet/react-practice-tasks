@@ -1,9 +1,11 @@
 import * as React from 'react'
-import './clock.css'
 import {useEffect, useState} from "react";
+
+import './clock.css'
 
 export const Clock = ({clock, removeClock}) => {
     const [time, setTime] = useState(new Date())
+    const [loading, setLoading] = useState(true)
 
     const formatTime = (time) => {
         return time < 10 ? `0${time}` : time;
@@ -24,28 +26,33 @@ export const Clock = ({clock, removeClock}) => {
     };
 
     useEffect(() => {
+        const handleDate = () => {
+            setLoading(false)
+            const date = new Date();
+            date.setHours(date.getHours() + clock.timezone)
+            setTime(date)
+        }
+
         const interval = setInterval(handleDate, 1000)
 
         return () => {
             clearInterval(interval)
         }
-    }, [time])
-
-    const handleDate = () => {
-        const date = new Date();
-        date.setHours(date.getHours() + clock.timezone)
-        setTime(date)
-    }
+    }, [clock])
 
     return (
         <div className={"clock"}>
             <div className={"clock__name"}>{clock.name}</div>
             <div className={"clock__delete"} onClick={() => removeClock(clock.id)}>x</div>
             <div className={"clock__face"}>
-                <div className={"clock__hand hour"} style={hoursStyle}/>
-                <div className={"clock__hand minute"} style={minutesStyle}/>
-                <div className={"clock__hand second"} style={secondsStyle}/>
-                {clock.timeZone}
+
+                {loading ? <p className={"clock__loading"}>Loading...</p>
+                    : <div>
+                        <div className={"clock__hand hour"} style={hoursStyle}/>
+                        <div className={"clock__hand minute"} style={minutesStyle}/>
+                        <div className={"clock__hand second"} style={secondsStyle}/>
+                    </div>
+                }
             </div>
         </div>
     )

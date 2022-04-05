@@ -1,0 +1,20 @@
+.notes {
+    width: 900px;
+    margin: 80px auto;
+}
+
+.notes__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.notes__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.notes__header h2 {
+    margin-right: 20px;
+}

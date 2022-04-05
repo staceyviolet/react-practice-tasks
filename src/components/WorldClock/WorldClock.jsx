@@ -5,7 +5,7 @@ import {generate} from "shortid";
 import {Clock} from "./Clock";
 import './worldClock.css'
 
-export const WorldClock = ({}) => {
+export const WorldClock = () => {
     const [name, setName] = useState('')
     const [timezone, setTimezone] = useState('')
     const [clocksArray, setClocksArray] = useState([])
@@ -24,11 +24,12 @@ export const WorldClock = ({}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
         setClocksArray((prev) => {
             return [...prev, {
                 id: generate(),
                 name: name,
-                timezone: timezone
+                timezone: Number(timezone)
             }]
         })
         setName("")
@@ -41,11 +42,16 @@ export const WorldClock = ({}) => {
 
     return (
         <div className={"world-clock"}>
-            <AddClockForm handleSubmit={handleSubmit} handleChange={handleChange} name={name} timezone={timezone}/>
+            <AddClockForm name={name}
+                          timezone={timezone}
+                          handleSubmit={handleSubmit}
+                          handleChange={handleChange}
+            />
+
             <div className={"world-clock__clocks"}>
-                {clocksArray.map(clock => {
-                    return <Clock key={clock.id} clock={clock} removeClock={handleRemoveClick}/>
-                })}
+                {clocksArray.map(clock => <Clock key={clock.id}
+                                                 clock={clock}
+                                                 removeClock={handleRemoveClick}/>)}
             </div>
         </div>
     )

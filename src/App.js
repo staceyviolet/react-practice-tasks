@@ -14,6 +14,7 @@ import WorkoutsTracker from "./components/WorkoutsTrack/WorkoutsTracker";
 import Cards from "./components/Cards/Cards";
 import {Decomposition} from "./components/Decomposition/Decomposition";
 import {WorldClock} from "./components/WorldClock/WorldClock";
+import {Notes} from "./components/CRUD/Notes";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
 
             {/*HOMEWORK 6*/}
             <WorldClock/>
+            {/*<Notes />*/}
         </div>
     );
 }
