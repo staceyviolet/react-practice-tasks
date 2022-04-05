@@ -9,11 +9,7 @@ const app = new Koa();
 app.use(cors());
 app.use(koaBody({json: true}));
 
-const notes = [{
-    id: 0,
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida magna eu ipsum gravida, vitae pulvinar felis vulputate. Nullam euismod mi eu mauris pulvinar, sit amet tempus quam interdum. Aliquam id viverra enim. Etiam et dolor quis nulla vestibulum ultricies. Suspendisse tincidunt porta enim a eleifend. Maecenas eget risus nec leo" +
-        " tempor elementum. Sed varius ut nisi et vulputate. Aenean sollicitudin magna et dolor fermentum ia"
-}];
+const notes = [];
 let nextId = 1;
 
 const router = new Router();
