@@ -16,6 +16,7 @@ import {Decomposition} from "./components/Decomposition/Decomposition";
 import {WorldClock} from "./components/WorldClock/WorldClock";
 import {Notes} from "./components/CRUD/Notes";
 import DateFormat from "./components/DateFormat/DateFormat";
+import Highlight from "./components/Highlight/Highlight";
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
 
             {/*HOMEWORK 7*/}
             {/*<DateFormat/>*/}
+            {/*<Highlight/>*/}
         </div>
     );
 }

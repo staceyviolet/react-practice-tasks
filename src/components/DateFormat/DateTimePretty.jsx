@@ -20,7 +20,7 @@ const withPrettyFormat = (Component) => {
             result = diffDays + ' days ago'
         }
 
-        return Component.apply(this, [{date: result}, ...args])
+        return Component.apply(this, [{url: props.url, date: result}, ...args])
     }
 }
 
