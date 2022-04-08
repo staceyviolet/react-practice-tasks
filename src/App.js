@@ -35,11 +35,11 @@ function App() {
             {/*<Decomposition/>*/}
 
             {/*HOMEWORK 6*/}
-            {/*<WorldClock/>*/}
+            <WorldClock/>
             {/*<Notes />*/}
 
             {/*HOMEWORK 7*/}
-            <DateFormat/>
+            {/*<DateFormat/>*/}
         </div>
     );
 }
