@@ -15,6 +15,7 @@ import Cards from "./components/Cards/Cards";
 import {Decomposition} from "./components/Decomposition/Decomposition";
 import {WorldClock} from "./components/WorldClock/WorldClock";
 import {Notes} from "./components/CRUD/Notes";
+import DateFormat from "./components/DateFormat/DateFormat";
 
 
 function App() {
@@ -34,8 +35,11 @@ function App() {
             {/*<Decomposition/>*/}
 
             {/*HOMEWORK 6*/}
-            <WorldClock/>
+            {/*<WorldClock/>*/}
             {/*<Notes />*/}
+
+            {/*HOMEWORK 7*/}
+            <DateFormat/>
         </div>
     );
 }
