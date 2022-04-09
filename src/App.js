@@ -17,6 +17,7 @@ import {WorldClock} from "./components/WorldClock/WorldClock";
 import {Notes} from "./components/CRUD/Notes";
 import DateFormat from "./components/DateFormat/DateFormat";
 import Highlight from "./components/Highlight/Highlight";
+import {UsersList} from "./components/UsersList/UsersList";
 
 
 function App() {
@@ -36,12 +37,15 @@ function App() {
             {/*<Decomposition/>*/}
 
             {/*HOMEWORK 6*/}
-            <WorldClock/>
+            {/*<WorldClock/>*/}
             {/*<Notes />*/}
 
             {/*HOMEWORK 7*/}
             {/*<DateFormat/>*/}
             {/*<Highlight/>*/}
+
+            {/*HOMEWORK 8*/}
+            <UsersList/>
         </div>
     );
 }

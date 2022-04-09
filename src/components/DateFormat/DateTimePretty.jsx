@@ -1,4 +1,3 @@
-import * as React from 'react'
 import {DateTime} from "./DateTime";
 
 const withPrettyFormat = (Component) => {

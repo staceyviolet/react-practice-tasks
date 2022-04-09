@@ -13,6 +13,7 @@ export function List(props) {
                 return (
                     <HighlightedArticle {...item} />
                 );
+            default : return null
         }
     });
 };
