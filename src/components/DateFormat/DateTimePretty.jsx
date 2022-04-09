@@ -14,7 +14,7 @@ const withPrettyFormat = (Component) => {
                 result = today.getHours() - date.getHours() + " hours ago"
             }
         } else {
-            const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+            const oneDay = 24 * 60 * 60 * 1000;
             const diffDays = Math.round(Math.abs((today - date) / oneDay));
             result = diffDays + ' days ago'
         }

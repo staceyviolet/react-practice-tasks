@@ -18,6 +18,7 @@ import {Notes} from "./components/CRUD/Notes";
 import DateFormat from "./components/DateFormat/DateFormat";
 import Highlight from "./components/Highlight/Highlight";
 import {UsersList} from "./components/UsersList/UsersList";
+import {CustomHookCheck} from "./components/CustomHookCheck/CustomHookCheck";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
 
             {/*HOMEWORK 8*/}
             <UsersList/>
+            {/*<CustomHookCheck />*/}
         </div>
     );
 }
