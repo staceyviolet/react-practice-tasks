@@ -49,7 +49,7 @@
 border-bottom: none;
 }
 
-.active {
+.users-list__active {
     color: white;
     background: #0f7ffa;
 }

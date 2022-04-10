@@ -19,6 +19,7 @@ import DateFormat from "./components/DateFormat/DateFormat";
 import Highlight from "./components/Highlight/Highlight";
 import {UsersList} from "./components/UsersList/UsersList";
 import {CustomHookCheck} from "./components/CustomHookCheck/CustomHookCheck";
+import MenuHomework from "./components/Menu/MenuHomework";
 
 
 function App() {
@@ -46,8 +47,11 @@ function App() {
             {/*<Highlight/>*/}
 
             {/*HOMEWORK 8*/}
-            <UsersList/>
+            {/*<UsersList/>*/}
             {/*<CustomHookCheck />*/}
+
+            {/*HOMEWORK 9*/}
+            <MenuHomework />
         </div>
     );
 }

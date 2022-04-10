@@ -26,7 +26,7 @@ export const List = ({list, onClick}) => {
                 : list.map(user => {
                         return (
                             <li key={user.id}
-                                className={`${activeId === user.id && 'active'}`}
+                                className={`${activeId === user.id && 'users-list__active'}`}
                                 onClick={() => handleClick(user)}
                             >
                                 {user.name}
