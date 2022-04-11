@@ -10,6 +10,7 @@
     padding-top: 20px;
     margin: 0 auto;
     width: fit-content;
+    width: 550px;
 }
 
 .posts__create {
@@ -18,7 +19,6 @@
     border: 1px solid #dedede;
     border-radius: 3px;
     padding: 10px;
-    width: 400px;
     display: flex;
     justify-content: flex-end;
 }
@@ -36,20 +36,22 @@
     background: white;
     border: 1px solid #dedede;
     border-radius: 3px;
-    padding: 10px;
-    width: 400px;
+    padding: 10px 15px;
     cursor: pointer;
 }
 
-.post textarea {
+.post__create-form textarea {
     width: 100%;
     padding: 5px 10px;
     border: 1px solid #dedede;
-    margin: 10px 0;
-
+    margin-bottom: 10px;
 }
 
-.post textarea:focus, .post input:focus {
+.post__create-form form {
+    flex-grow: 1;
+}
+
+.post__create-form textarea:focus, .post input:focus {
     outline: none;
 }
 
@@ -71,7 +73,7 @@
     align-items: center;
 }
 
-.post__header img {
+.post__header img, .post__create-form img {
     height: 70px;
     padding-right: 20px;
 }
@@ -102,6 +104,11 @@
 .post__create-header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.post__create-form {
+    display: flex;
 }
 
 .post__footer {

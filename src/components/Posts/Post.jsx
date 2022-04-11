@@ -2,7 +2,6 @@ import * as React from 'react'
 import {useNavigate} from "react-router";
 import {formatDate} from "../../utils/formatDate";
 
-
 export const Post = ({post}) => {
     const navigate = useNavigate();
 

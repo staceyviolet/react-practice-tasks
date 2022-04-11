@@ -38,14 +38,18 @@ export const NewPost = ({}) => {
                     <div>Еще</div>
                     <button onClick={handleClose}><Link to={'/'}>x</Link></button>
                 </div>
-                <form onSubmit={handleSubmit}>
-                    <label htmlFor={'post'}/>
-                    <textarea name={'post'} id={'post'} value={content}
-                              onChange={(e) => setContent(e.target.value)}/>
-                    <div className={'post__footer'}>
-                        <button type={'submit'}>Опубликовать</button>
-                    </div>
-                </form>
+                <div className={'post__create-form'}>
+                    <img src={'https://ncdsonline.org/wp-content/uploads/bb-plugin/cache/empty-profile-image-square.jpg'}
+                         alt={'avatar'}/>
+                    <form onSubmit={handleSubmit}>
+                        <label htmlFor={'post'}/>
+                        <textarea name={'post'} id={'post'} value={content} rows={'3'}
+                                  onChange={(e) => setContent(e.target.value)}/>
+                        <div className={'post__footer'}>
+                            <button type={'submit'}>Опубликовать</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     )

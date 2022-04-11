@@ -25,7 +25,7 @@ export const Posts = () => {
                 <button onClick={() => navigate('/posts/new')}>Создать пост</button>
             </div>
             <div>
-                {posts.map(post => <Post key={post.id} post={post} /> )}
+                {posts.map(post => <Post key={post.id} post={post} /> ).reverse()}
             </div>
         </div>
     )
