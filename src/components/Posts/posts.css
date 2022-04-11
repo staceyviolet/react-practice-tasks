@@ -1,0 +1,149 @@
+.posts-page {
+    background: #e8eaed;
+    width: 100% !important;
+    min-height: 100vh;
+    height: 100%;
+}
+
+
+.posts {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.posts__create {
+    margin-bottom: 5px;
+    background: white;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.posts__create button {
+    background: #4469ae;
+    border: none;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 3px;
+}
+
+.post {
+    margin-bottom: 5px;
+    background: white;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    padding: 10px;
+    width: 400px;
+    cursor: pointer;
+}
+
+.post textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #dedede;
+    margin: 10px 0;
+
+}
+
+.post textarea:focus, .post input:focus {
+    outline: none;
+}
+
+.post button {
+    border: none;
+    background: white;
+}
+
+.post a {
+    color: black;
+}
+
+.post a:hover {
+    text-decoration: none;
+}
+
+.post__header {
+    display: flex;
+    align-items: center;
+}
+
+.post__header img {
+    height: 70px;
+    padding-right: 20px;
+}
+
+.post__header_name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post__header_role {
+    font-size: 14px;
+}
+
+.post__header_created {
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.post__body {
+    padding: 10px;
+}
+
+.post__content {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.post__create-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post__footer button {
+    border: none;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 3px;
+}
+
+.post__footer button:first-child {
+    background: #4469ae;
+    margin-right: 5px;
+}
+
+.post__footer button {
+    background: #b04546;
+}
+
+.post__like-comment button {
+    background: white;
+    border: none;
+}
+
+.post__like-comment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post__comment {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.post__comment input {
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px 10px;
+    border: 1px solid #dedede;
+}

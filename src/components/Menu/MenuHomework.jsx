@@ -10,7 +10,7 @@ import './menuHomepage.css'
 export default function MenuHomework() {
     return (
         <BrowserRouter>
-            <div>
+            <div className={'menu-body'}>
                 <Menu/>
                 <div className="page">
                     <Routes>

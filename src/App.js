@@ -20,6 +20,7 @@ import Highlight from "./components/Highlight/Highlight";
 import {UsersList} from "./components/UsersList/UsersList";
 import {CustomHookCheck} from "./components/CustomHookCheck/CustomHookCheck";
 import MenuHomework from "./components/Menu/MenuHomework";
+import {PostsRouter} from "./components/Posts/PostsRouter";
 
 
 function App() {
@@ -51,7 +52,8 @@ function App() {
             {/*<CustomHookCheck />*/}
 
             {/*HOMEWORK 9*/}
-            <MenuHomework />
+            {/*<MenuHomework/>*/}
+            <PostsRouter/>
         </div>
     );
 }
