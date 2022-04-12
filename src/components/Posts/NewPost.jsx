@@ -39,7 +39,7 @@ export const NewPost = ({}) => {
                     <button onClick={handleClose}><Link to={'/'}>x</Link></button>
                 </div>
                 <div className={'post__create-form'}>
-                    <img src={'https://ncdsonline.org/wp-content/uploads/bb-plugin/cache/empty-profile-image-square.jpg'}
+                    <img src={'/img/avatar.jpg'}
                          alt={'avatar'}/>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor={'post'}/>

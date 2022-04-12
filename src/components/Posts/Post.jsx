@@ -16,7 +16,7 @@ export const Post = ({post}) => {
         <div className={'post'}
              onClick={() => handleClick(post)}>
             <div className={'post__header'}>
-                <img src={'https://ncdsonline.org/wp-content/uploads/bb-plugin/cache/empty-profile-image-square.jpg'}
+                <img src={'/img/avatar.jpg'}
                      alt={'avatar'}/>
                 <div>
                     <span className={'post__header_name'}>Name Surname</span>

@@ -41,7 +41,7 @@ function App() {
 
             {/*HOMEWORK 6*/}
             {/*<WorldClock/>*/}
-            <Notes />
+            {/*<Notes />*/}
 
             {/*HOMEWORK 7*/}
             {/*<DateFormat/>*/}
@@ -53,7 +53,7 @@ function App() {
 
             {/*HOMEWORK 9*/}
             {/*<MenuHomework/>*/}
-            {/*<PostsRouter/>*/}
+            <PostsRouter/>
         </div>
     );
 }
