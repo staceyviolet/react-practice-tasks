@@ -10,7 +10,7 @@ const LOADING_URL = 'http://localhost:7070/loading '
 
 export const CustomHookCheck = () => {
     return (
-        <div>
+        <div style={{width: 200, margin: '0 auto'}}>
             <NormalFetch url={SUCCESS_URL}/>
             <FetchError url={ERROR_URL}/>
             <LoadingCheck url={LOADING_URL}/>

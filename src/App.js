@@ -14,7 +14,7 @@ import WorkoutsTracker from "./components/WorkoutsTrack/WorkoutsTracker";
 import Cards from "./components/Cards/Cards";
 import {Decomposition} from "./components/Decomposition/Decomposition";
 import {WorldClock} from "./components/WorldClock/WorldClock";
-import {Notes} from "./components/CRUD/Notes";
+import {Notes} from "./components/Notes/Notes";
 import DateFormat from "./components/DateFormat/DateFormat";
 import Highlight from "./components/Highlight/Highlight";
 import {UsersList} from "./components/UsersList/UsersList";
@@ -40,7 +40,7 @@ function App() {
             {/*<Decomposition/>*/}
 
             {/*HOMEWORK 6*/}
-            {/*<WorldClock/>*/}
+            <WorldClock/>
             {/*<Notes />*/}
 
             {/*HOMEWORK 7*/}
@@ -53,7 +53,7 @@ function App() {
 
             {/*HOMEWORK 9*/}
             {/*<MenuHomework/>*/}
-            <PostsRouter/>
+            {/*<PostsRouter/>*/}
         </div>
     );
 }

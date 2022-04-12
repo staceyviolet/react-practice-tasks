@@ -11,7 +11,7 @@ export const Notes = () => {
     const [updated, setUpdated] = useState(false)
 
     const loadData = () => {
-        fetch('http://localhost:7778/notes')
+        fetch('http://localhost:7000/notes')
             .then(response => response.json())
             .then(response => {
                     setNotes(response)
@@ -20,7 +20,7 @@ export const Notes = () => {
     }
 
     const deleteNote = (id) => {
-        fetch('http://localhost:7778/notes/' + id, {
+        fetch('http://localhost:7000/notes/' + id, {
             method: 'DELETE'
         }).then(response => response.status === 204 ? setUpdated(!updated)
             : console.log('delete error'))
@@ -32,7 +32,7 @@ export const Notes = () => {
             return
         }
 
-        fetch('http://localhost:7778/notes', {
+        fetch('http://localhost:7000/notes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -9,7 +9,7 @@ const app = new Koa();
 app.use(cors());
 app.use(koaBody({json: true}));
 
-let posts = [{id: 0, content: 'dsdssdsd'}];
+let posts = [];
 let nextId = 1;
 
 const router = new Router();
@@ -42,6 +42,6 @@ router.delete('/posts/:id', async(ctx, next) => {
 
 app.use(router.routes()).use(router.allowedMethods());
 
-const port = process.env.PORT || 7778;
+const port = process.env.PORT || 7777;
 const server = http.createServer(app.callback());
 server.listen(port, () => console.log('server started'));
