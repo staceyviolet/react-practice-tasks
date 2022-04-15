@@ -44,8 +44,8 @@ function App() {
             {/*<Notes />*/}
 
             {/*HOMEWORK 7*/}
-            <DateFormat/>
-            {/*<Highlight/>*/}
+            {/*<DateFormat/>*/}
+            <Highlight/>
 
             {/*HOMEWORK 8*/}
             {/*<UsersList/>*/}
