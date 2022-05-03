@@ -1,8 +1,8 @@
 import * as React from 'react'
-import Item from "./Item";
+import Item       from './Item';
 import './listing.css'
 
-export default function Listing({items}) {
+export default function Listing({ items }) {
 
     return (
         <div className="item-list">

@@ -1,16 +1,16 @@
-import * as React from 'react'
-import PropTypes from "prop-types";
-import ItemPurchaseInfo from "./ItemPurchaseInfo";
-import ItemDescription from "./ItemDescription";
-import ItemHighlight from "./ItemHighlight";
-import {ItemModel} from "../../../models/ItemModel";
+import * as React       from 'react'
+import PropTypes        from 'prop-types';
+import ItemPurchaseInfo from './ItemPurchaseInfo';
+import ItemDescription  from './ItemDescription';
+import ItemHighlight    from './ItemHighlight';
+import { ItemModel }    from '../../../models/ItemModel';
 import '../style.css';
 
 function ShopItemFunc(props) {
-    const {item} = props
+    const { item } = props
 
     return (
-        <div className={"main-content"}>
+        <div className={'main-content'}>
             <h2>{item.brand}</h2>
             <h1>{item.title}</h1>
             <h3>{item.description}</h3>

@@ -4,16 +4,19 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    padding: 0;
 }
 
 .green {
     font-size: 30px;
     line-height: 30px;
     color: #1bc82f;
+    padding-bottom: 3px;;
 }
 
 .black {
     font-size: 30px;
     line-height: 30px;
-    padding: 0 0 0 5px
+    padding: 0 0 0 5px;
+    color: black;
 }

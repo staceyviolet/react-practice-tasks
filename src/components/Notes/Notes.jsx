@@ -48,7 +48,7 @@ export const Notes = () => {
     return (
         <div className={'notes'}>
             <div className={'notes__header'}><h2>Notes</h2>
-                <Button icon={'🗘'}
+                <Button icon={'⟳'}
                         color={'green'}
                         onClick={loadData}/>
             </div>

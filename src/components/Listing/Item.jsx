@@ -4,7 +4,7 @@ import './item.css'
 export default function Item({url, mainImage, title, currencyCode, price, quantity}) {
 
     return (
-        <div className="item">
+        <div className="listing-item">
             <div className="item-image">
                 <a href={url}>
                     <img src={mainImage} alt={"main image"}/>

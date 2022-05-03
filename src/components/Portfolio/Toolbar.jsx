@@ -12,11 +12,13 @@ export default class Toolbar extends React.Component {
                                 onClick={() => onSelectFilter(filter)}
                                 style={filter === selected ? {
                                     backgroundColor: "#333",
-                                    color: 'white'
+                                    color: 'white',
+                                    marginRight: 5
                                 } : {
                                     backgroundColor: "white",
                                     color: '#333',
-                                    border: '1px #333 solid'
+                                    border: '1px #333 solid',
+                                    marginRight: 5
                                 }}
                         >
                             {filter}

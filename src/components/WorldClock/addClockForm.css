@@ -11,6 +11,12 @@
     background: white;
     border: 1px solid black;
     align-self: flex-end;
+    border-radius: 4px;
+}
+
+.add-clock-form form div {
+    display: flex;
+    flex-direction: column;
 }
 
 .add-clock-form form input {
@@ -21,4 +27,5 @@
     cursor: pointer;
     height: 35px;
     width: 150px;
+    color: black;
 }

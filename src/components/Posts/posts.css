@@ -106,6 +106,9 @@
     justify-content: space-between;
     margin-bottom: 15px;
 }
+.post__create-header button{
+    height: fit-content;
+}
 
 .post__create-form {
     display: flex;

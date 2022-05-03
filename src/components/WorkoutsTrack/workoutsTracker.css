@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .workouts-tracker form {
@@ -20,12 +21,10 @@
     border-radius: 10px;
     background: white;
     border: 2px solid black;
+    color: black;
     align-self: flex-end;
 }
 
-.workouts-tracker form input {
-    margin-top: 10px;
-}
 
 .workouts-tracker form button {
     cursor: pointer;
