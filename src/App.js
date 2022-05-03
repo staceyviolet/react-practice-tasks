@@ -19,7 +19,7 @@ import DateFormat          from './components/DateFormat/DateFormat';
 import Highlight           from './components/Highlight/Highlight';
 import { UsersList }       from './components/UsersList/UsersList';
 import { CustomHookCheck } from './components/CustomHookCheck/CustomHookCheck';
-import MenuHomework        from './components/Menu/MenuHomework';
+import MenuHomepage        from './components/Menu/MenuHomepage';
 import { PostsRouter }     from './components/Posts/PostsRouter';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
         <div>
             {/*<ShopItemFunc item={shopItem}/>*/}
             {/*<ShopItemClass item={shopItem}/>*/}
-            {/*<Portfolio/>*/}
+            <Portfolio/>
             {/*<Store products={products}/>*/}
             {/*<Stars count={1}/>*/}
             {/*<Listing items={data}/>*/}
@@ -42,7 +42,7 @@ function App() {
             {/*<Highlight/>*/}
             {/*<UsersList/>*/}
             {/*<CustomHookCheck /> backend*/}
-            {/*<MenuHomework/>*/}
+            {/*<MenuHomepage/>*/}
             {/*<PostsRouter/> backend*/}
         </div>
     );

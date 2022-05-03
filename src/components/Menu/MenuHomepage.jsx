@@ -1,13 +1,12 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {Menu} from "./Menu";
-import {HomePage} from "./HomePage";
-import {DriftPage} from "./DriftPage";
-import {TimeAttackPage} from "./TimeAttackPage";
-import {ForzaPage} from "./ForzaPage";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Menu }                         from './Menu';
+import { HomePage }                     from './HomePage';
+import { DriftPage }                    from './DriftPage';
+import { TimeAttackPage }               from './TimeAttackPage';
+import { ForzaPage }                    from './ForzaPage';
 
 import './menuHomepage.css'
-
-export default function MenuHomework() {
+export default function MenuHomepage() {
     return (
         <BrowserRouter>
             <div className={'menu-body'}>
